@@ -1,0 +1,126 @@
+.navbar {
+    width: 100%;
+    height: 10vh;
+    background-color: #c72c2c;
+    display: flex;
+    align-items: center;
+}
+
+.ladoEsquerdo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 50px;
+}
+
+.ladoEsquerdo img {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+.ladoDireito {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 75px;
+    gap: 5px;
+}
+
+.ladoDireito a {
+    height: 30px;
+    width: 100px;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 500;
+    color: #efefee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ladoDireito a:hover {
+    color: #b6b6b6;
+}
+
+.ladoDireito button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    display: none;
+}
+
+
+.navbar #abrir {
+    padding-left: 0px;
+}
+
+.navbar #abrir img {
+    display: none;
+}
+
+.navbar #fechar img {
+    display: inherit;
+}
+
+.navbar #abrir .linksEscondidos {
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.navbar #fechar .linksEscondidos {
+    display: none;
+}
+
+.navbar #abrir a {
+    width: 70px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #efefee;
+}
+
+
+
+/* Quando a tiver o tamanho máximo de 900px altere o comprimento de cada link do lado direito */
+@media screen and (max-width: 900px) {
+    .navbar .ladoDireito a {
+        width: 70px;
+    }
+
+}
+
+/* Quando a tiver o tamanho máximo de 660px desapareça com os links e mostre um icone de menu */
+@media  screen and (max-width: 660px) {
+    .navbar .ladoDireito a {
+        display: none;
+    }
+
+    .navbar .ladoDireito {
+        justify-content: flex-end;
+        padding: 20px;    
+    }
+
+    .navbar .ladoDireito button {
+        display: flex;
+        padding-right: 0;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-icon {
+        color: white;
+        width: 35px;
+        height: 35px;
+    }
+
+}

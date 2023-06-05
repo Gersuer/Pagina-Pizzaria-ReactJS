@@ -1,0 +1,36 @@
+.menu{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1em;
+    background-color: #efefef;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.itemContainer{
+    width: 225px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap:10px;
+    box-shadow: 3px 3px 50px rgb(199, 199, 199);
+    transition: 0.3s;
+}
+
+.pizzaImg{
+    width: 100%;
+    height: 175px;
+}
+
+.itemContainer:hover{
+    transform: scale(1.1);
+}

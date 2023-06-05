@@ -1,0 +1,43 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background: #c72c2c;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.contact-links{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #efefee;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+
+.contact-icons{
+    width: 20px;
+    height: 20px;
+}
+
+.footer-txt{
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
